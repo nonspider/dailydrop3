@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="http://zenspace-forall.com/wp-content/themes/fullscreen-artists/images/favicon.ico"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <title>Spirit Token Daily Drop</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <style>
+      :root {
+        --color-primary: #e4f9f5;
+        --color-secondary: #30e3ca;
+        --color-tertiary: #11999e;
+        --color-quaternary: #40514e;
+
+        --padding-primary: 1.25rem;
+      }
+      body {
+        max-width: 1300px;
+        margin: 0 auto;
+        min-height: 90vh;
+        background-color: var(--color-primary);
+        color: var(--color-quaternary);
+        font-family: "Nunito", sans-serif;
+        display: flex;
+        flex-direction: column;
+        padding: var(--padding-primary);
+      }
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .nav > div:nth-child(1) {
+        font-weight: 900;
+        font-size: 1.5rem;
+      }
+
+      .nav > div:nth-child(2) {
+        font-weight: 600;
+        color: var(--color-secondary);
+        background-color: var(--color-quaternary);
+        padding: 0.8rem 1.5rem;
+        border-radius: 8px;
+      }
+
+      .nav > div:nth-child(2) span {
+        color: var(--color-tertiary);
+        margin-right: 5px;
+        width: 20px;
+        height: 20px;
+      }
+
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        text-align: center;
+      }
+
+      .content {
+        text-align: center;
+        z-index: 2;
+        margin-top: 20px;
+      }
+
+      .content span {
+        display: inline;
+        margin-left: 0.1em;
+        margin-right: 0.1em;
+        position: relative;
+        top: 0;
+        opacity: 0;
+        animation: fadeDots 1.8s ease-in-out infinite;
+      }
+
+      .content span:nth-child(1) {
+        animation-delay: 0.2571428571s;
+      }
+
+      .content span:nth-child(2) {
+        animation-delay: 0.5142857143s;
+      }
+
+      .content span:nth-child(3) {
+        animation-delay: 0.72s;
+      }
+
+      @keyframes fadeDots {
+        0% {
+          opacity: 0;
+        }
+        40% {
+          opacity: 1;
+        }
+        70% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div>Daily Drop</div>
+      <div>
+        <span><i class="fa-solid fa-circle"></i></span> Status
+      </div>
+    </div>
+    <div class="content">
+      <h1>
+        Spirit Token Daily Drop microservice is running
+        <span>.</span>
+        <span>.</span>
+        <span>.</span>
+      </h1>
+    </div>
+  </body>
+</html>
